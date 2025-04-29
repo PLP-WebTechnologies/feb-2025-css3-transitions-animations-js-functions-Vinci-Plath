@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Explorer | CSS3 & JavaScript Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cosmic-container">
+        <header class="stellar-header">
+            <h1 class="pulse">COSMIC EXPLORER</h1>
+            <div class="theme-selector">
+                <button class="theme-btn nebula" data-theme="nebula">Nebula</button>
+                <button class="theme-btn supernova" data-theme="supernova">Supernova</button>
+                <button class="theme-btn dark-matter" data-theme="dark-matter">Dark Matter</button>
+            </div>
+        </header>
+
+        <main class="galaxy-main">
+            <section class="control-panel">
+                <div class="panel-card" id="planet-card">
+                    <h2>Planetary Explorer</h2>
+                    <div class="planet-display">
+                        <div class="planet" id="animated-planet"></div>
+                    </div>
+                    <div class="planet-controls">
+                        <button id="spin-planet" class="cosmic-btn">Toggle Spin</button>
+                        <button id="pulse-planet" class="cosmic-btn">Pulse Effect</button>
+                        <button id="orbit-planet" class="cosmic-btn">Start Orbit</button>
+                    </div>
+                </div>
+
+                <div class="panel-card" id="data-card">
+                    <h2>Astro Data</h2>
+                    <div class="data-visualization">
+                        <div class="data-bar" id="data-bar-1"></div>
+                        <div class="data-bar" id="data-bar-2"></div>
+                        <div class="data-bar" id="data-bar-3"></div>
+                    </div>
+                    <button id="animate-data" class="cosmic-btn">Animate Data</button>
+                    <div class="user-preferences">
+                        <h3>Your Preferences</h3>
+                        <div class="pref-form">
+                            <label for="username">Astronaut Name:</label>
+                            <input type="text" id="username" class="cosmic-input">
+                            <label for="color-pref">Favorite Cosmic Color:</label>
+                            <input type="color" id="color-pref" value="#4d79ff">
+                            <button id="save-prefs" class="cosmic-btn">Save to Cosmic Memory</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="starfield-container">
+                <div class="starfield" id="starfield"></div>
+                <button id="toggle-stars" class="cosmic-btn">Toggle Shooting Stars</button>
+            </section>
+        </main>
+
+        <footer class="cosmic-footer">
+            <p>Powered by CSS3 Transitions & Advanced JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
